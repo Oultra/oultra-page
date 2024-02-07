@@ -11,7 +11,8 @@ const NavContainer = styled.nav`
   position: sticky;
   top: 0;
   z-index: 999;
-  border-bottom: 1px solid #000;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.5);
 `;
 const NavContainerMax = styled.nav`
   width: 100%;
