@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { ServiceCard } from '../../../../new-portfolio/src/components/Services/components/card';
 
 const HomeContainer = styled.div`
     width: 100%;
@@ -80,11 +79,12 @@ const FirstServices = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
 `;
 const ServiceCard1 = styled.div`
     flex-grow: 2;
-    height: 400px;
+    height: 350px;
     background-color: #010508;
     padding: 1rem;
     border-radius: 10px;
@@ -105,7 +105,7 @@ const ServiceCard1 = styled.div`
 `;
 const ServiceCard2 = styled.div`
     flex-grow: 1;
-    height: 400px;
+    height: 350px;
     background-color: #010508;
     padding: 1rem;
     border-radius: 10px;
