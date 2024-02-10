@@ -83,27 +83,6 @@ const FirstServices = styled.section`
     flex-wrap: wrap;
 `;
 const ServiceCard1 = styled.div`
-    flex-grow: 2;
-    height: 350px;
-    background-color: #010508;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    h2 {
-        font-size: 2.5rem;
-        font-weight: 500;
-    }
-    p {
-        font-size: 1.5rem;
-        font-weight: 300;
-    }
-`;
-const ServiceCard2 = styled.div`
     flex-grow: 1;
     height: 350px;
     background-color: #010508;
@@ -115,6 +94,49 @@ const ServiceCard2 = styled.div`
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    div {
+        width: 100%;
+        height: 60px;
+        object-fit: cover;
+        align-self: flex-start;
+            img {
+            width: 100%;
+            height: 100%;
+            filter: invert(1);
+        }
+    }
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    p {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+`;
+const ServiceCard2 = styled.div`
+    flex-grow: 2;
+    height: 350px;
+    background-color: #010508;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    div {
+        width: 100%;
+        height: 60px;
+        object-fit: cover;
+        align-self: flex-start;
+            img {
+            width: 100%;
+            height: 100%;
+            filter: invert(1);
+        }
+    }
     h2 {
         font-size: 2.5rem;
         font-weight: 500;
@@ -128,10 +150,11 @@ const ServiceCard2 = styled.div`
 const ButtonSecondary = styled.button`
     background-color: #f8f9fa;
     color: #000;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 500;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
+    padding: 8px 10px;
     cursor: pointer;
     border: 2px solid #f8f9fa;
     &:hover {
@@ -155,16 +178,25 @@ const Home = () => {
         <Services>
             <FirstServices>
                 <ServiceCard1>
+                    <div>
+                        <img src="/svg/web-page.svg" />
+                    </div>
                     <h2>Paginas web</h2>
                     <p>Desarrollamos y diseñamos paginas web eficientes, accesibles y responsivas </p>
                     <ButtonSecondary>Ver mas</ButtonSecondary>
                 </ServiceCard1>
-                <ServiceCard2>
-                    <h2>Autentificacion</h2>
+                <ServiceCard1>
+                    <div>
+                        <img src="/svg/surveillance.svg" />
+                    </div>
+                    <h2>CCTV</h2>
                     <p>Implementamos sistemas de autentificacion seguros y eficientes</p>
                     <ButtonSecondary>Ver mas</ButtonSecondary>
-                </ServiceCard2>
+                </ServiceCard1>
                 <ServiceCard2>
+                    <div>
+                        <img src="/svg/program.svg" />
+                    </div>
                     <h2>Software</h2>
                     <p>Desarrollamos software a la medida de tus necesidades</p>
                     <ButtonSecondary>Ver mas</ButtonSecondary>
