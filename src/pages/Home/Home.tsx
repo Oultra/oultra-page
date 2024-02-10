@@ -84,7 +84,7 @@ const FirstServices = styled.section`
 `;
 const ServiceCard1 = styled.div`
     flex-grow: 1;
-    height: 350px;
+    height: 300px;
     background-color: #010508;
     padding: 1rem;
     border-radius: 10px;
@@ -112,11 +112,14 @@ const ServiceCard1 = styled.div`
     p {
         font-size: 1.5rem;
         font-weight: 300;
+        width: 90%;
+        text-wrap: balance;
+        text-align: center;
     }
 `;
 const ServiceCard2 = styled.div`
     flex-grow: 2;
-    height: 350px;
+    height: 300px;
     background-color: #010508;
     padding: 1rem;
     border-radius: 10px;
@@ -144,6 +147,9 @@ const ServiceCard2 = styled.div`
     p {
         font-size: 1.5rem;
         font-weight: 300;
+        width: 90%;
+        text-wrap: balance;
+        text-align: center;
     }
 
 `;
@@ -157,6 +163,27 @@ const ButtonSecondary = styled.button`
     padding: 8px 10px;
     cursor: pointer;
     border: 2px solid #f8f9fa;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.848);
+        backdrop-filter: blur(5px);
+        color: #f8f9fa;
+        transition: all 0.3s ease-in-out;
+        border: 2px solid #f8f9fa;
+    }
+`;
+
+const ButtonTertiary = styled.button`
+    background-color: #f8f9fa;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 2px solid #f8f9fa;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     &:hover {
         background-color: rgba(0, 0, 0, 0.848);
         backdrop-filter: blur(5px);
@@ -182,7 +209,7 @@ const Home = () => {
                         <img src="/svg/web-page.svg" />
                     </div>
                     <h2>Paginas web</h2>
-                    <p>Desarrollamos y diseñamos paginas web eficientes, accesibles y responsivas </p>
+                    <p>Diseñamos y desarrollamos páginas web eficientes, accesibles y responsivas.</p>
                     <ButtonSecondary>Ver mas</ButtonSecondary>
                 </ServiceCard1>
                 <ServiceCard1>
@@ -190,18 +217,59 @@ const Home = () => {
                         <img src="/svg/surveillance.svg" />
                     </div>
                     <h2>CCTV</h2>
-                    <p>Implementamos sistemas de autentificacion seguros y eficientes</p>
+                    <p>Implementamos sistemas de autenticación seguros y eficientes.</p>
                     <ButtonSecondary>Ver mas</ButtonSecondary>
                 </ServiceCard1>
                 <ServiceCard2>
                     <div>
                         <img src="/svg/program.svg" />
                     </div>
-                    <h2>Software</h2>
-                    <p>Desarrollamos software a la medida de tus necesidades</p>
+                    <h2>Desarrollo de Software perzonalizado</h2>
+                    <p>Desarrollamos software a medida de tus necesidades.</p>
                     <ButtonSecondary>Ver mas</ButtonSecondary>
                 </ServiceCard2>
             </FirstServices>
+            <FirstServices>
+                <ServiceCard1>
+                    <div>
+                        <img src="/svg/security.svg" />
+                    </div>
+                    <h2>Servicios de Seguridad</h2>
+                    <p>Ofrecemos servicios en biométricos, sensores, etc.</p>
+                    <ButtonSecondary>Ver mas</ButtonSecondary>
+                </ServiceCard1>
+                <ServiceCard1>
+                    <div>
+                        <img src="/svg/solutions.svg" />
+                    </div>
+                    <h2>Soluciones</h2>
+                    <p>Soluciones personalizadas para hogares y negocios.</p>
+                    <ButtonSecondary>Ver mas</ButtonSecondary>
+                </ServiceCard1>
+                <ServiceCard2>
+                    <div>
+                        <img src="/svg/smart-house.svg" />
+                    </div>
+                    <h2>Domótica</h2>
+                    <p>Integración de sistemas para la automatización inteligente del hogar.</p>
+                    <ButtonSecondary>Ver mas</ButtonSecondary>
+                </ServiceCard2>
+            </FirstServices>
+
+
+            <ButtonTertiary>
+                Ver todos los servicios 
+            </ButtonTertiary>
+
+            <div>
+                <h3>Implementamos las tecnologías más avanzadas para garantizar soluciones de vanguardia.</h3>
+                <p>Nuestra dedicación a la excelencia se refleja en la elección de las mejores tecnologías para ofrecerte lo mejor.</p>
+
+                <div>
+
+                </div>
+            </div>
+
         </Services>
         </>
 
