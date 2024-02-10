@@ -345,6 +345,81 @@ const ButtonTertiary = styled.button`
 
 `;
 
+const AboutUs = styled.section`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    width: 95%;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    text-wrap: balance;
+    flex-wrap: wrap;
+    text-align: center;
+    @media (max-width: 768px) {
+        gap: 1rem;
+    }
+    @media (max-width: 480px) {
+        gap: 0.5rem;
+    }
+    @media (max-width: 320px) {
+        gap: 0.3rem;
+    }
+    
+`;
+const AboutUsImg = styled.div`
+    flex-wrap: 1;
+    height: 100%;
+    max-width: 500px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+`;
+const AboutUsText = styled.div`
+    flex-wrap: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 500px;
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 500;
+        @media (max-width: 768px) {
+            font-size: 3rem;
+        }
+        @media (max-width: 480px) {
+            font-size: 2.5rem;
+        }
+        @media (max-width: 320px) {
+            font-size: 2rem;
+        }
+    }
+    p {
+        font-size: 1.6rem;
+        font-weight: 300;
+        text-align: center;
+        
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+        }
+        @media (max-width: 480px) {
+            font-size: 1.3rem;
+        }
+        @media (max-width: 320px) {
+            font-size: 1.1rem;
+        }
+    }
+`;
+
+
 
 const Home = () => {
     return (
@@ -354,6 +429,19 @@ const Home = () => {
             <Subtitle>Desde software innovador hasta páginas web cautivadoras y eficientes instalaciones, Oultra es tu socio ideal. Libera todo el potencial de tu empresa y experimenta el poder de una solución integral diseñada para impulsarte al éxito.</Subtitle>
             <ButtonPrimary>Incia tu proyecto</ButtonPrimary>
         </HomeContainer>
+
+        <AboutUs>
+            <AboutUsImg>
+                <img src="/us.webp" loading="lazy" alt="oultra"/>
+            </AboutUsImg>
+            <AboutUsText>
+                <h2>Conoce a oultra</h2>
+                <p>
+                    Oultra es una empresa de desarrollo de software y soluciones tecnológicas que ofrece servicios de desarrollo de software, diseño web, soluciones de seguridad y domótica. Nuestro equipo de expertos está comprometido con la excelencia y la innovación, y se esfuerza por brindar soluciones tecnológicas de vanguardia que transformarán tu empresa.
+                    Con cede en Guadalajara, Jalisco, Mexico.
+                </p>
+            </AboutUsText>
+        </AboutUs>
         <Services>
             <FirstServices>
                 <ServiceCard1>
