@@ -59,12 +59,12 @@ const NavHome = styled(Link)`
 `;
 
 const data = [
-  { name: "Desarrollo de paginas web." , icon: "/svg/web-page.svg" },
-  { name: "CCTVV." , icon: "/svg/surveillance.svg" },
-  { name: "Software perzonalizado." , icon: "/svg/program.svg" },
-  { name: "Servicios de seguridad." , icon: "/svg/security.svg" },
-  { name: "Soluciones." , icon: "/svg/solutions.svg" },
-  { name: "Domotica." , icon: "/svg/smart-house.svg" },
+  { name: "Desarrollo de paginas web." , icon: "/svg/web-page.svg" , link: "/servicios/paginas-web"},
+  { name: "CCTV." , icon: "/svg/surveillance.svg", link: "servicios/cctv" },
+  { name: "Software perzonalizado." , icon: "/svg/program.svg", link: "servicios/software"},
+  { name: "Servicios de seguridad." , icon: "/svg/security.svg", link: "servicios/seguridad"},
+  { name: "Soluciones." , icon: "/svg/solutions.svg", link: "servicios/soluciones"},
+  { name: "Domotica." , icon: "/svg/smart-house.svg", link: "servicios/domotica"},
 ]
 
 const Navbar = () => {
@@ -74,16 +74,16 @@ const Navbar = () => {
   const getList = () => (
     <div style={{ width: 250 }} onClick={() => setOpen(false)} >
       {data.map((item, index) => (
-        <ListItem button key={index} >
-          <img src={item.icon} alt={item.name} style={{ width: 20, height: 20, marginRight: 10 }} />
-          <ListItemText primary={item.name} />
-        </ListItem>
+        <Link to={item.link}>
+          <ListItem button key={index} >
+            <img src={item.icon} alt={item.name} style={{ width: 20, height: 20, marginRight: 10 }} />
+            <ListItemText primary={item.name} />
+          </ListItem>
+        </Link>
       ))}
     </div>
   );
     
-  
-
   return (
     <NavContainer>
       <NavContainerMax>

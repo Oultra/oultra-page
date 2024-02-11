@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const HomeContainer = styled.div`
@@ -311,7 +312,7 @@ const ButtonSecondary = styled.button`
 
 `;
 
-const ButtonTertiary = styled.button`
+const ButtonTertiary = styled(Link)`
     background-color: #f8f9fa;
     color: #000;
     font-size: 1.6rem;
@@ -323,6 +324,7 @@ const ButtonTertiary = styled.button`
     border: 2px solid #f8f9fa;
     margin-top: 4rem;
     margin-bottom: 4rem;
+    text-decoration: none;
     &:hover {
         background-color: rgba(0, 0, 0, 0.848);
         backdrop-filter: blur(5px);
@@ -497,7 +499,7 @@ const Home = () => {
             </FirstServices>
 
 
-            <ButtonTertiary>
+            <ButtonTertiary to="/servicios">
                 Ver todos los servicios 
             </ButtonTertiary>
 
