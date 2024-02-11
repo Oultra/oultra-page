@@ -101,7 +101,7 @@ const Services = () => {
   return (
     <ServiceCointainer>
       <VideoHeaderCointainer>
-        <video src="/public/video.mp4" autoPlay muted loop> 
+        <video src="/video.mp4" autoPlay muted loop> 
             Tu navegador no admite el elemento <code>video</code>.
         </video>
         <h1>Nuestros servicios</h1>
