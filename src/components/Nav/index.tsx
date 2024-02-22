@@ -1,11 +1,16 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
 import { useState } from "react";
-import { Divider, IconButton, ListItem, ListItemText } from "@mui/material";
+import { Divider, IconButton,  ListItem, ListItemText } from "@mui/material";
 import { Drawer } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 
 
+const CustomDrawer = styled(Drawer)`
+  .MuiDrawer-paper {
+      background-color: #202021; 
+  }
+`;
 const NavContainer = styled.nav`
   display: flex;
   justify-content: center;
@@ -49,22 +54,35 @@ const NavHome = styled(Link)`
   font-size: 1.5rem;
   font-weight: 500;
   cursor: pointer;
+  color: white;
   &:hover {
     transition: all ease-in-out;
     text-decoration: underline;
   }
   text-align: center;
   width: 100%;
-
 `;
-
+const CustomLink = styled(Link)`
+  text-decoration: none;
+  color: white;
+`;
+const TextLink = styled(ListItemText)`
+  text-decoration: none;
+  color: white;
+`;
+const CustomImg = styled.img`
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  filter: invert(1);
+`;
 const data = [
-  { name: "Desarrollo de paginas web." , icon: "/svg/web-page.svg" , link: "/servicios/paginas-web"},
-  { name: "CCTV." , icon: "/svg/surveillance.svg", link: "servicios/cctv" },
+  { name: "Desarrollo  web" , icon: "/svg/web-page.svg" , link: "/web"},
+  /* { name: "CCTV." , icon: "/svg/surveillance.svg", link: "servicios/cctv" },
   { name: "Software perzonalizado." , icon: "/svg/program.svg", link: "servicios/software"},
   { name: "Servicios de seguridad." , icon: "/svg/security.svg", link: "servicios/seguridad"},
   { name: "Soluciones." , icon: "/svg/solutions.svg", link: "servicios/soluciones"},
-  { name: "Domotica." , icon: "/svg/smart-house.svg", link: "servicios/domotica"},
+  { name: "Domotica." , icon: "/svg/smart-house.svg", link: "servicios/domotica"}, */
 ]
 
 const Navbar = () => {
@@ -74,12 +92,12 @@ const Navbar = () => {
   const getList = () => (
     <div style={{ width: 250 }} onClick={() => setOpen(false)} >
       {data.map((item, index) => (
-        <Link to={item.link} key={index}>
+        <CustomLink to={item.link} key={index}>
           <ListItem button key={index} >
-            <img src={item.icon} alt={item.name} style={{ width: 20, height: 20, marginRight: 10 }} />
-            <ListItemText primary={item.name} />
+            <CustomImg src={item.icon} alt={item.name} style={{ width: 20, height: 20, marginRight: 10 }} />
+            <TextLink primary={item.name} />
           </ListItem>
-        </Link>
+        </CustomLink>
       ))}
     </div>
   );
@@ -88,13 +106,13 @@ const Navbar = () => {
     <NavContainer>
       <NavContainerMax>
         <LogoTemp to="/">
-          Oultra.
+          Oultra
         </LogoTemp>
         <div>
-          <IconButton onClick={ () => setOpen(true) }  style={{ color: "white" }} >
+          <IconButton onClick={ () => setOpen(true) }  style={{ color: "white" }} aria-label="boton navbar">
             <MenuIcon />
           </IconButton>
-          <Drawer 
+          <CustomDrawer 
             variant="temporary"
             open={open} 
             anchor="right" 
@@ -102,10 +120,14 @@ const Navbar = () => {
             <NavHome to="/">
               Oultra
             </NavHome>
+            <ListItem >
+              {/* <img src={item.icon} alt={item.name} style={{ width: 20, height: 20, marginRight: 10 }} /> */}
+              <ListItemText primary="Contacto" />
+            </ListItem>
             <Divider />
             { getList() }
             <Divider />
-          </Drawer>
+          </CustomDrawer>
         </div>
         
       </NavContainerMax>

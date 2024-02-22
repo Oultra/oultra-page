@@ -280,7 +280,8 @@ const ServiceCard2 = styled.div`
 
 
 `;
-/* const ButtonSecondary = styled.button`
+const ButtonSecondary = styled(Link)`
+    text-decoration: none;
     background-color: #f8f9fa;
     color: #000;
     font-size: 1.3rem;
@@ -310,7 +311,7 @@ const ServiceCard2 = styled.div`
         font-size: 0.7rem;
     }
 
-`; */
+`;
 
 const ButtonTertiary = styled(Link)`
     background-color: #f8f9fa;
@@ -643,7 +644,7 @@ const Home = () => {
                     </div>
                     <h2>Paginas web</h2>
                     <p>Diseñamos y desarrollamos páginas web eficientes, accesibles y responsivas.</p>
-                    {/* <ButtonSecondary>Ver mas</ButtonSecondary> */}
+                    <ButtonSecondary to="/web" >Ver mas</ButtonSecondary> 
                 </ServiceCard1>
                 <ServiceCard1>
                     <div>

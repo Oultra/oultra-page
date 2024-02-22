@@ -163,7 +163,7 @@ const Services = () => {
   return (
     <ServiceCointainer>
       <VideoHeaderCointainer>
-        <video src="/video.mp4" autoPlay muted loop> 
+        <video src="/video.mp4" autoPlay muted loop > 
             Tu navegador no admite el elemento <code>video</code>.
         </video>
         <h1>Nuestros servicios</h1>
@@ -173,7 +173,7 @@ const Services = () => {
 
         <Service>
             <ServiceImg>
-                <img src="/cctv.webp" alt="tecnologia"  />
+                <img src="/cctv.webp" alt="tecnologia" loading="lazy" />
             </ServiceImg>
             <ServiceText>
                 <h2>Soluciones de Seguridad: Cámaras de Vigilancia</h2>
@@ -189,7 +189,7 @@ const Services = () => {
 
         <Service2>
             <ServiceImg2>
-                <img src="/audio.webp" alt="tecnologia" />
+                <img src="/audio.webp" alt="tecnologia" loading="lazy"/>
             </ServiceImg2>
             <ServiceText>
                 <h2>Soluciones de Audio y Video</h2>
@@ -205,7 +205,7 @@ const Services = () => {
 
         <Service>
             <ServiceImg>
-                <img src="/redes.webp" alt="tecnologia" />
+                <img src="/redes.webp" alt="tecnologia" loading="lazy"/>
             </ServiceImg>
             <ServiceText>
                 <h2>Soluciones de Redes</h2>
@@ -221,7 +221,7 @@ const Services = () => {
 
         <Service2>
             <ServiceImg2>
-                <img src="/control.webp" alt="tecnologia" />
+                <img src="/control.webp" alt="tecnologia" loading="lazy"/>
             </ServiceImg2>
             <ServiceText>
                 <h2>Soluciones de Control de Acceso</h2>
@@ -237,7 +237,7 @@ const Services = () => {
 
         <Service>
             <ServiceImg>
-                <img src="/admin.webp" alt="tecnologia" />
+                <img src="/admin.webp" alt="tecnologia" loading="lazy"/>
             </ServiceImg>
             <ServiceText>
                 <h2>Servicios Administrados</h2>
@@ -253,7 +253,7 @@ const Services = () => {
 
         <Service2>
             <ServiceImg2>
-                <img src="/mantenimiento.webp" alt="tecnologia" />
+                <img src="/mantenimiento.webp" alt="tecnologia" loading="lazy"/>
             </ServiceImg2>
             <ServiceText>
                 <h2>Planes de Mantenimiento</h2>

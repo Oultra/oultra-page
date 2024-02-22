@@ -77,6 +77,14 @@ const CustomInput = styled(TextField)`
     & .MuiOutlinedInput-multiline.MuiOutlinedInput-multiline {
         padding: 0;
     }
+    & .MuiOutlinedInput-multiline {
+        padding: 0;
+    }
+    & .MuiFormHelperText-root {
+        color: #ffffff;
+        margin-bottom: 5px;
+        text-align: left;
+    }
 
 `
 
