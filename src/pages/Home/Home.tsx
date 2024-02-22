@@ -280,7 +280,7 @@ const ServiceCard2 = styled.div`
 
 
 `;
-const ButtonSecondary = styled.button`
+/* const ButtonSecondary = styled.button`
     background-color: #f8f9fa;
     color: #000;
     font-size: 1.3rem;
@@ -310,7 +310,7 @@ const ButtonSecondary = styled.button`
         font-size: 0.7rem;
     }
 
-`;
+`; */
 
 const ButtonTertiary = styled(Link)`
     background-color: #f8f9fa;
