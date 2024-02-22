@@ -421,13 +421,204 @@ const AboutUsText = styled.div`
     }
 `;
 
+const TechStack = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+    width: 95%;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    text-wrap: balance;
+    flex-wrap: wrap;
+    text-align: center;
+    @media (max-width: 768px) {
+        gap: 1rem;
+    }
+    @media (max-width: 480px) {
+        gap: 0.5rem;
+    }
+    @media (max-width: 320px) {
+        gap: 0.3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
+        @media (max-width: 480px) {
+            font-size: 1.5rem;
+        }
+        @media (max-width: 320px) {
+            font-size: 1.3rem;
+        }
+    }
+    p {
+        font-size: 1.6rem;
+        font-weight: 300;
+        text-align: center;
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+        }
+        @media (max-width: 480px) {
+            font-size: 1.3rem;
+        }
+        @media (max-width: 320px) {
+            font-size: 1.1rem;
+        }
+    }
+`;
+const TechContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    @media (max-width: 768px) {
+        gap: 1rem;
+    }
+    @media (max-width: 480px) {
+        gap: 0.5rem;
+    }
+    @media (max-width: 320px) {
+        gap: 0.3rem;
+    }
+`;
+
+const TechStackCard = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    min-height: 200px;
+    min-width: 200px;
+    max-height: 200px;
+    max-width: 200px;
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        min-width: 100px;
+        max-width: 100px;
+        min-height: 100px;
+        max-height: 100px;
+    }
+    h3 {
+        font-size: 2.0rem;
+        font-weight: 500;
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
+        @media (max-width: 480px) {
+            font-size: 1.5rem;
+        }
+        @media (max-width: 320px) {
+            font-size: 1.3rem;
+        }
+    }
+    @media (max-width: 768px) {
+        padding: 0.8rem;
+    }
+    @media (max-width: 480px) {
+        padding: 0.6rem;
+    }
+    @media (max-width: 320px) {
+        padding: 0.5rem;
+    }
+`;
+
+const ContactContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    width: 95%;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    text-wrap: balance;
+    flex-wrap: wrap;
+    text-align: center;
+    @media (max-width: 768px) {
+        gap: 1rem;
+    }
+    @media (max-width: 480px) {
+        gap: 0.5rem;
+    }
+    @media (max-width: 320px) {
+        gap: 0.3rem;
+    }
+    p {
+        font-size: 2.1rem;
+        font-weight: 300;
+        text-align: center;
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+        }
+        @media (max-width: 480px) {
+            font-size: 1.3rem;
+        }
+        @media (max-width: 320px) {
+            font-size: 1.1rem;
+        }
+    }
+`;
+
+const ContactButton = styled(Link)`
+    background-color: #f8f9fa;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 2px solid #f8f9fa;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-decoration: none;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.848);
+        backdrop-filter: blur(5px);
+        color: #f8f9fa;
+        transition: all 0.3s ease-in-out;
+        border: 2px solid #f8f9fa;
+    }
+    @media (max-width: 768px) {
+        padding: 8px 12px;
+        font-size: 1.3rem;
+    }
+    @media (max-width: 480px) {
+        padding: 6px 10px;
+        font-size: 1.1rem;
+    }
+    @media (max-width: 320px) {
+        padding: 5px 8px;
+        font-size: 0.9rem;
+    }
+
+`;
+
 
 
 const Home = () => {
     return (
         <>
         <HomeContainer>
-            <Title>Bienvendio a oultra</Title>
+            <Title>oultra</Title>
             <Subtitle>Desde software innovador hasta páginas web cautivadoras y eficientes instalaciones, Oultra es tu socio ideal. Libera todo el potencial de tu empresa y experimenta el poder de una solución integral diseñada para impulsarte al éxito.</Subtitle>
             <ButtonPrimary>Incia tu proyecto</ButtonPrimary>
         </HomeContainer>
@@ -452,49 +643,49 @@ const Home = () => {
                     </div>
                     <h2>Paginas web</h2>
                     <p>Diseñamos y desarrollamos páginas web eficientes, accesibles y responsivas.</p>
-                    <ButtonSecondary>Ver mas</ButtonSecondary>
+                    {/* <ButtonSecondary>Ver mas</ButtonSecondary> */}
                 </ServiceCard1>
                 <ServiceCard1>
                     <div>
-                        <img src="/svg/surveillance.svg" loading="lazy"/>
+                        <img src="/svg/surveillance.svg" loading="lazy" alt="CCTV" />
                     </div>
                     <h2>CCTV</h2>
                     <p>Implementamos sistemas de autenticación seguros y eficientes.</p>
-                    <ButtonSecondary>Ver mas</ButtonSecondary>
+                    {/* <ButtonSecondary>Ver mas</ButtonSecondary> */}
                 </ServiceCard1>
                 <ServiceCard2>
                     <div>
-                        <img src="/svg/program.svg" loading="lazy"/>
+                        <img src="/svg/program.svg" loading="lazy" alt="Desarrollo de software" />
                     </div>
                     <h2>Desarrollo de Software perzonalizado</h2>
                     <p>Desarrollamos software a medida de tus necesidades.</p>
-                    <ButtonSecondary>Ver mas</ButtonSecondary>
+                    {/* <ButtonSecondary>Ver mas</ButtonSecondary> */}
                 </ServiceCard2>
             </FirstServices>
             <FirstServices>
                 <ServiceCard1>
                     <div>
-                        <img src="/svg/security.svg" loading="lazy"/>
+                        <img src="/svg/security.svg" loading="lazy" alt="Seguridad" />
                     </div>
                     <h2>Servicios de Seguridad</h2>
                     <p>Ofrecemos servicios en biométricos, sensores, etc.</p>
-                    <ButtonSecondary>Ver mas</ButtonSecondary>
+                    {/* <ButtonSecondary>Ver mas</ButtonSecondary> */}
                 </ServiceCard1>
                 <ServiceCard1>
                     <div>
-                        <img src="/svg/solutions.svg" loading="lazy"/>
+                        <img src="/svg/solutions.svg" loading="lazy" alt="Soluciones" />
                     </div>
                     <h2>Soluciones</h2>
                     <p>Soluciones personalizadas para hogares y negocios.</p>
-                    <ButtonSecondary>Ver mas</ButtonSecondary>
+                    {/* <ButtonSecondary>Ver mas</ButtonSecondary> */}
                 </ServiceCard1>
                 <ServiceCard2>
                     <div>
-                        <img src="/svg/smart-house.svg" loading="lazy"/>
+                        <img src="/svg/smart-house.svg" loading="lazy" alt="Smart House" />
                     </div>
                     <h2>Domótica</h2>
                     <p>Integración de sistemas para la automatización inteligente del hogar.</p>
-                    <ButtonSecondary>Ver mas</ButtonSecondary>
+                    {/* <ButtonSecondary>Ver mas</ButtonSecondary> */}
                 </ServiceCard2>
             </FirstServices>
 
@@ -503,14 +694,55 @@ const Home = () => {
                 Ver todos los servicios 
             </ButtonTertiary>
 
-            <div>
-                <h3>Implementamos las tecnologías más avanzadas para garantizar soluciones de vanguardia.</h3>
+            <TechStack>
+                <h2>Implementamos las tecnologías más avanzadas para garantizar soluciones de vanguardia.</h2>
                 <p>Nuestra dedicación a la excelencia se refleja en la elección de las mejores tecnologías para ofrecerte lo mejor.</p>
 
-                <div>
+                <TechContainer>
+                    <TechStackCard>   
+                        <div>
+                            <img src="tech/react.svg" loading="lazy" alt="React"/>
+                            <h3>React</h3>
+                        </div>
+                    </TechStackCard>
+                    <TechStackCard>   
+                        <div>
+                            <img src="tech/aws.svg" loading="lazy" alt="Aws"/>
+                            <h3>AWS</h3>
+                        </div>
+                    </TechStackCard>
+                    <TechStackCard>   
+                        <div>
+                            <img src="tech/docker.svg" loading="lazy" alt="Docker"/>
+                            <h3>Docker</h3>
+                        </div>
+                    </TechStackCard>
+                    <TechStackCard>   
+                        <div>
+                            <img src="tech/typescript.svg" loading="lazy" alt="Typescript"/>
+                            <h3>Typescript</h3>
+                        </div>
+                    </TechStackCard>
+                    <TechStackCard>   
+                        <div>
+                            <img src="tech/vercel.svg" loading="lazy" alt="Vercel"/>
+                            <h3>Vercel</h3>
+                        </div>
+                    </TechStackCard>
+                    <TechStackCard>   
+                        <div>
+                            <img src="tech/shopify.svg" loading="lazy" alt="Shopify"/>
+                            <h3>Shopify</h3>
+                        </div>
+                    </TechStackCard>
+                </TechContainer>
+            </TechStack>
 
-                </div>
-            </div>
+
+            <ContactContainer>
+                <p>¡Haz que suceda! Presiona el botón de contacto y déjanos guiar el camino hacia la solución que necesitas. ¡Estamos aquí para ayudarte!</p>
+                <ContactButton to="/contacto">Contactanos</ContactButton>
+            </ContactContainer>
 
         </Services>
         </>

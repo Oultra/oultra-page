@@ -12,11 +12,13 @@
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
+    "@formspree/react": "^2.5.1",
     "@mui/icons-material": "^5.15.9",
     "@mui/material": "^5.15.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.3",
+    "sonner": "^1.4.0",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {

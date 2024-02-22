@@ -74,7 +74,7 @@ const Navbar = () => {
   const getList = () => (
     <div style={{ width: 250 }} onClick={() => setOpen(false)} >
       {data.map((item, index) => (
-        <Link to={item.link}>
+        <Link to={item.link} key={index}>
           <ListItem button key={index} >
             <img src={item.icon} alt={item.name} style={{ width: 20, height: 20, marginRight: 10 }} />
             <ListItemText primary={item.name} />
