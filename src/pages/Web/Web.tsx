@@ -253,7 +253,7 @@ const Web = () => {
                     <ul>
                         <li>Hosting y Dominio Incluidos</li>
                         <li>Diseño y Desarrollo Personalizado</li>
-                        <li>2 Correo Empresarial</li>
+                        <li>2 correos empresariales</li>
                         <li>Landing Page de Presentación</li>
                         <li>Soporte por Correo Electrónico</li>
                     </ul>

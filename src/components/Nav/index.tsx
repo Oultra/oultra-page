@@ -76,6 +76,15 @@ const CustomImg = styled.img`
   margin-right: 10px;
   filter: invert(1);
 `;
+const CustomImg2 = styled.img`
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+`;
+const CustomA = styled.a`
+  text-decoration: none;
+  color: white;
+`;
 const data = [
   { name: "Desarrollo  web" , icon: "/svg/web-page.svg" , link: "/web"},
   /* { name: "CCTV." , icon: "/svg/surveillance.svg", link: "servicios/cctv" },
@@ -120,10 +129,34 @@ const Navbar = () => {
             <NavHome to="/">
               Oultra
             </NavHome>
-            <ListItem >
-              {/* <img src={item.icon} alt={item.name} style={{ width: 20, height: 20, marginRight: 10 }} /> */}
-              <ListItemText primary="Contacto" />
-            </ListItem>
+
+            <Divider />
+
+            <CustomLink to="/contacto">
+              <ListItem >
+                <ListItemText primary="Contacto" />
+              </ListItem>
+            </CustomLink>
+
+            <CustomLink to="/servicios">
+              <ListItem >
+                <ListItemText primary="Servicios" />
+              </ListItem>
+            </CustomLink>
+
+            {/* <CustomLink to="/nosotros">
+              <ListItem >
+                <ListItemText primary="Nosotros" />
+              </ListItem>
+            </CustomLink> */}
+
+            <CustomA href="https://www.instagram.com/oultradev/" target="blank_">
+              <ListItem >
+                <CustomImg2 src="/svg/instagram.svg" alt="facebook" />
+                <ListItemText primary="Instagram" />
+              </ListItem>
+            </CustomA>
+
             <Divider />
             { getList() }
             <Divider />
