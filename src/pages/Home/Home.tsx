@@ -65,7 +65,7 @@ const Subtitle = styled.p`
     }
 `;
 
-const ButtonPrimary = styled.button`
+const ButtonPrimary = styled(Link)`
     background-color: #f8f9fa;
     color: #000;
     padding: 1rem 2.5rem;
@@ -73,6 +73,7 @@ const ButtonPrimary = styled.button`
     font-weight: 500;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
+    text-decoration: none;
     cursor: pointer;
     border: 2px solid #f8f9fa;
     &:hover {
@@ -621,7 +622,7 @@ const Home = () => {
         <HomeContainer>
             <Title>oultra</Title>
             <Subtitle>Desde software innovador hasta páginas web cautivadoras y eficientes instalaciones, Oultra es tu socio ideal. Libera todo el potencial de tu empresa y experimenta el poder de una solución integral diseñada para impulsarte al éxito.</Subtitle>
-            <ButtonPrimary>Incia tu proyecto</ButtonPrimary>
+            <ButtonPrimary to="/servicios">Inicia tu proyecto</ButtonPrimary>
         </HomeContainer>
 
         <AboutUs>
