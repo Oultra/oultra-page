@@ -5,6 +5,7 @@ import Navbar from "./components/Nav"
 import Services from "./pages/Services/Services"
 import Contact from "./pages/Contact/Contact"
 import Web from "./pages/Web/Web"
+import ErrorPage from "./pages/Error404/Error404"
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
           <Route path="/contacto" element={<Contact/>} />
           <Route path="/sobre-nosotros" element={<Contact/>} />
           <Route path="/web" element={ <Web/> } />
-          {/* <Route path="*" element={<Home />} /> */}
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Router>
     </>
