@@ -162,7 +162,7 @@ const Services = () => {
     
     useEffect(() => {
         window.scrollTo(0, 0)
-        window.document.title = "Oultra | Servicios"
+        window.document.title = "oultra.dev | Servicios"
     }, [])
    
   return (

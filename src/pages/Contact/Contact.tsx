@@ -20,7 +20,11 @@ const ContactContainer = styled.div`
         text-align: center;
         max-width: 800px;
         text-wrap: balance;
-        margin-bottom: 40px;
+    }
+    & a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
     }
 `
 
@@ -32,6 +36,7 @@ const InputsContainer = styled.div`
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
+    margin-top: 20px;
 `
 
 const CustomInput = styled(TextField)`
@@ -212,7 +217,7 @@ const Contact = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
-        window.document.title = "Oultra | Contacto"
+        window.document.title = "oultra.dev | Contacto"
     }, [])
 
     return (
@@ -221,6 +226,7 @@ const Contact = () => {
             <ContactContainer>
                 <h1>Contacta con Nosotros</h1>
                 <p>Estamos aquí para brindarte la asistencia que necesitas. Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+                <p>Envianos un correo: <a href='mailti:contacto@oultra.dev' >contacto@oultra.dev</a></p>
 
                 <InputsContainer>
                     <CustomInput 

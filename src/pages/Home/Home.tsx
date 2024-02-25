@@ -622,7 +622,7 @@ const Home = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
-        window.document.title = "Oultra"
+        window.document.title = "oultra.dev"
       }, [])
 
     return (

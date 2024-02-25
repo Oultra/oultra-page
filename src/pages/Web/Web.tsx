@@ -482,7 +482,7 @@ const Web = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
-        window.document.title = "Oultra | Desarrollo Web"
+        window.document.title = "oultra.dev | Desarrollo Web"
     }, [])
 
     return (

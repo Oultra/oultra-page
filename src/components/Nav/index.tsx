@@ -156,6 +156,12 @@ const Navbar = () => {
                 <ListItemText primary="Instagram" />
               </ListItem>
             </CustomA>
+            <CustomA href="https://twitter.com/oultra_dev" target="blank_">
+              <ListItem >
+                <CustomImg2 src="/svg/twitter.svg" alt="X" />
+                <ListItemText primary="X (Twitter)" />
+              </ListItem>
+            </CustomA>
 
             <Divider />
             { getList() }
