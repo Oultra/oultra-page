@@ -628,8 +628,8 @@ const Home = () => {
     return (
         <>
         <HomeContainer>
-            <Title>oultra</Title>
-            <Subtitle>Desde software innovador hasta páginas web cautivadoras y eficientes instalaciones, Oultra es tu socio ideal. Libera todo el potencial de tu empresa y experimenta el poder de una solución integral diseñada para impulsarte al éxito.</Subtitle>
+            <Title>oultra.dev</Title>
+            <Subtitle>Desde software innovador hasta páginas web cautivadoras y eficientes instalaciones, oultra.dev es tu socio ideal. Libera todo el potencial de tu empresa y experimenta el poder de una solución integral diseñada para impulsarte al éxito.</Subtitle>
             <ButtonPrimary to="/servicios">Inicia tu proyecto</ButtonPrimary>
         </HomeContainer>
 
@@ -638,9 +638,9 @@ const Home = () => {
                 <img src="/us.webp" loading="lazy" alt="oultra"/>
             </AboutUsImg>
             <AboutUsText>
-                <h2>Conoce a oultra</h2>
+                <h2>Conoce a oultra.dev</h2>
                 <p>
-                    Oultra es una empresa de desarrollo de software y soluciones tecnológicas que ofrece servicios de desarrollo de software, diseño web, soluciones de seguridad y domótica. Nuestro equipo de expertos está comprometido con la excelencia y la innovación, y se esfuerza por brindar soluciones tecnológicas de vanguardia que transformarán tu empresa.
+                    oultra.dev es una empresa de desarrollo de software y soluciones tecnológicas que ofrece servicios de desarrollo de software, diseño web, soluciones de seguridad y domótica. Nuestro equipo de expertos está comprometido con la excelencia y la innovación, y se esfuerza por brindar soluciones tecnológicas de vanguardia que transformarán tu empresa.
                     Con cede en Guadalajara, Jalisco, Mexico.
                 </p>
             </AboutUsText>

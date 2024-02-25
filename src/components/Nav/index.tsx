@@ -115,7 +115,7 @@ const Navbar = () => {
     <NavContainer>
       <NavContainerMax>
         <LogoTemp to="/">
-          Oultra
+          oultra.dev
         </LogoTemp>
         <div>
           <IconButton onClick={ () => setOpen(true) }  style={{ color: "white" }} aria-label="boton navbar">
