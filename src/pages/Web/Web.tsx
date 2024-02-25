@@ -144,11 +144,13 @@ const Suscripcion = styled.div`
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 95%;
     margin-top: 120px;
     margin-bottom: 100px;
     @media (max-width: 768px) {
         flex-direction: column;
+        gap: 20px;
+        text-align: center;
     }
     flex-wrap: wrap;
     border-top: 1px solid #333;
@@ -178,6 +180,19 @@ const SuscripcionLeft = styled.div`
             font-size: 1.2em;
             margin-bottom: 10px;
         }
+    }
+    span {
+        font-size: 1.6em;
+        color: #4bbaff;
+    }
+    strong {
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    @media (max-width: 768px) {
+        width: 100%;
+        border-bottom: 1px solid #333;
+        padding-bottom: 20px;
     }
 `;
 const SuscripcionRight = styled.div`
@@ -219,6 +234,11 @@ const SuscripcionRight = styled.div`
             transform: rotate(360deg);
         }
     }
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+    flex-wrap: wrap;
+
 `;
 
 const CustomInput = styled(TextField)`
@@ -298,7 +318,6 @@ const Form = styled.form`
     margin-top: 20px;
     margin-bottom: 20px;
     max-width: 900px;
-    padding: 20px;
     @media (max-width: 768px) {
         flex-direction: column;
     }
@@ -333,6 +352,7 @@ const SubTitleContainer = styled.div`
     }
     strong {
         color: #ffffff;
+        text-transform: uppercase;
     }
 `;
 
@@ -344,7 +364,6 @@ const InputsContainer = styled.div`
     gap: 20px;
     width: 100%;
     max-width: 600px;
-    padding: 20px;
     @media (max-width: 768px) {
         flex-direction: column;
     }
@@ -571,7 +590,8 @@ const Web = () => {
 
             <Suscripcion>
                 <SuscripcionLeft>
-                    <h3>Oultra plus</h3>
+                    <h3>Oultra plus </h3>
+                    <span>Solor por: { plan == "esencial" ? "$250.00 al mes" : plan == "avanzado" ? "$350.00 al mes" : plan == "profesional" ? "$450.00 al mes" : plan == "personalizado" ? "perzonalizado" : "Selecciona un plan" }</span>
                     <p>Únete a nuestra suscripción mensual y disfruta de beneficios exclusivos:</p>
                     <ul>
                         <li><strong>Flexibilidad Total:</strong> Personaliza tu plan según tus preferencias.</li>
