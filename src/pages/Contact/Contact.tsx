@@ -226,7 +226,7 @@ const Contact = () => {
             <ContactContainer>
                 <h1>Contacta con Nosotros</h1>
                 <p>Estamos aquí para brindarte la asistencia que necesitas. Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
-                <p>Envianos un correo: <a href='mailti:contacto@oultra.dev' >contacto@oultra.dev</a></p>
+                <p>Envianos un correo: <a href='mailto:contacto@oultra.dev' >contacto@oultra.dev</a></p>
 
                 <InputsContainer>
                     <CustomInput 
