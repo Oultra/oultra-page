@@ -1,4 +1,5 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom"
+import { Analytics } from "@vercel/analytics/react"
 
 import Home from "./pages/Home/Home"
 import Navbar from "./components/Nav"
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <>
+      <Analytics />
       <Router>
         <Navbar />
         <Routes>
