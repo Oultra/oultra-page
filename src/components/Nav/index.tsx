@@ -143,6 +143,11 @@ const Navbar = () => {
                 <ListItemText primary="Servicios" />
               </ListItem>
             </CustomLink>
+            <CustomLink to="/sobre-nosotros">
+              <ListItem >
+                <ListItemText primary="Sobre nosotros" />
+              </ListItem>
+            </CustomLink>
 
             {/* <CustomLink to="/nosotros">
               <ListItem >

@@ -6,6 +6,7 @@ import Services from "./pages/Services/Services"
 import Contact from "./pages/Contact/Contact"
 import Web from "./pages/Web/Web"
 import ErrorPage from "./pages/Error404/Error404"
+import SobreNosotros from "./pages/SobreNosotros/SobreNosotros"
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/servicios" element={<Services/>} />
           <Route path="/contacto" element={<Contact/>} />
-          <Route path="/sobre-nosotros" element={<Contact/>} />
+          <Route path="/sobre-nosotros" element={<SobreNosotros/>} />
           <Route path="/web" element={ <Web/> } />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
