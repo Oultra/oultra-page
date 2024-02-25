@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import styled from "styled-components";
 
 const ServiceCointainer = styled.div`
@@ -158,7 +159,11 @@ const ServiceText = styled.div`
 `;
 
 const Services = () => {
-
+    
+    useEffect(() => {
+        window.scrollTo(0, 0)
+        window.document.title = "Oultra | Servicios"
+    }, [])
    
   return (
     <ServiceCointainer>

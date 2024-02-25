@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -617,6 +618,13 @@ const ContactButton = styled(Link)`
 
 
 const Home = () => {
+
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+        window.document.title = "Oultra"
+      }, [])
+
     return (
         <>
         <HomeContainer>

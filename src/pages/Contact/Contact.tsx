@@ -1,7 +1,7 @@
 import { ValidationError, useForm } from '@formspree/react';
 import { Button } from '@mui/material';
 import TextField from '@mui/material/TextField';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Toaster, toast } from 'sonner';
 import styled from 'styled-components';
 
@@ -210,7 +210,13 @@ const Contact = () => {
         }
     }
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+        window.document.title = "Oultra | Contacto"
+    }, [])
+
     return (
+
         <form onSubmit={onSubmit}>
             <ContactContainer>
                 <h1>Contacta con Nosotros</h1>
