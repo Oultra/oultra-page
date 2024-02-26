@@ -590,7 +590,7 @@ const Web = () => {
 
             <Suscripcion>
                 <SuscripcionLeft>
-                    <h3>Oultra plus </h3>
+                    <h3>oultra.dev plus </h3>
                     <span>Solor por: { plan == "esencial" ? "$250.00 al mes" : plan == "avanzado" ? "$350.00 al mes" : plan == "profesional" ? "$450.00 al mes" : plan == "personalizado" ? "perzonalizado" : "Selecciona un plan" }</span>
                     <p>Únete a nuestra suscripción mensual y disfruta de beneficios exclusivos:</p>
                     <ul>

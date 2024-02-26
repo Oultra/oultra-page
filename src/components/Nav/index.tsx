@@ -127,7 +127,7 @@ const Navbar = () => {
             anchor="right" 
             onClose={ () => setOpen(false)}>
             <NavHome to="/">
-              Oultra
+              oultra.dev
             </NavHome>
 
             <Divider />
