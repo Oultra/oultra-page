@@ -167,6 +167,12 @@ const Navbar = () => {
                 <ListItemText primary="X (Twitter)" />
               </ListItem>
             </CustomA>
+            <CustomA href="https://www.facebook.com/profile.php?id=61556960488068" target="blank_">
+              <ListItem >
+                <CustomImg2 src="/svg/facebook.svg" alt="facebook" />
+                <ListItemText primary="Facebook" />
+              </ListItem>
+            </CustomA>
 
             <Divider />
             { getList() }
