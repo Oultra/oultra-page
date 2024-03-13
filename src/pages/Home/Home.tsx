@@ -621,8 +621,8 @@ const Home = () => {
 
 
     useEffect(() => {
-        window.scrollTo(0, 0)
-        window.document.title = "oultra.dev"
+        window.scrollTo(0, 0);
+        window.document.title = "oultra.dev";
       }, [])
 
     return (
@@ -743,6 +743,18 @@ const Home = () => {
                         <div>
                             <img src="tech/shopify.svg" loading="lazy" alt="Shopify"/>
                             <h3>Shopify</h3>
+                        </div>
+                    </TechStackCard>
+                    <TechStackCard>   
+                        <div>
+                            <img src="tech/zoho.svg" loading="lazy" alt="zoho"/>
+                            <h3>Zoho</h3>
+                        </div>
+                    </TechStackCard>
+                    <TechStackCard>   
+                        <div>
+                            <img src="tech/hostinger.svg" loading="lazy" alt="hostinger"/>
+                            <h3>Hostinger</h3>
                         </div>
                     </TechStackCard>
                 </TechContainer>

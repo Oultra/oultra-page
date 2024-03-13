@@ -57,6 +57,17 @@ const Firma = styled.p`
         font-weight: normal;
     }
 `;
+const MisionYvision = styled.section`
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    p {
+        margin-bottom: 10px;
+    }
+    strong{
+        font-weight: bold;
+    }
+`;
 
 
 
@@ -88,6 +99,12 @@ const SobreNosotros = () => {
               <span>El equipo de oultra.dev</span>
             </Firma>
           </Section>
+          <MisionYvision>
+            <h1>Misión y Visión</h1>
+            <p>Nuestra <strong>misión</strong> es proporcionar soluciones tecnológicas de alta calidad y servicios especializados que impulsen la eficiencia y el crecimiento de tu negocio. En oultra.dev, estamos comprometidos a ser tu socio tecnológico de confianza, brindándote soluciones innovadoras y de vanguardia que superen tus expectativas.</p>
+            <p>Nuestra <strong>visión</strong> es ser la empresa líder en soluciones tecnológicas para pequeños negocios en México. Nos esforzamos por ser reconocidos por nuestra excelencia, innovación y compromiso con la satisfacción del cliente, y por ser el socio tecnológico preferido para pequeñas empresas en todo México.</p>
+
+          </MisionYvision>
         </Container>
       );
       

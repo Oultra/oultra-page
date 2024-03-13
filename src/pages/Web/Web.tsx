@@ -49,7 +49,7 @@ const Plan = styled.div`
     width: 100%;
     border: 2px solid #333;
     border-radius: 12px;
-    height: 610px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     max-width: 300px;
@@ -532,6 +532,7 @@ const Web = () => {
                         <li>Diseño y Desarrollo Personalizado</li>
                         <li>10 Correos Empresariales</li>
                         <li>Web Estática Personalizada (Inicio, Servicios, Nosotros, Contacto)</li>
+                        <li>Pie de correo</li>
                         <li>Soporte por Correo Electrónico y Chat</li>
                     </ul>
                 </PlanBody>
@@ -559,6 +560,7 @@ const Web = () => {
                         <li>50 Correos Empresariales</li>
                         <li>Web Estática Personalizada (Inicio, Servicios, Nosotros, Contacto)</li>
                         <li>Soporte por Correo Electrónico, Chat y Llamada</li>
+                        <li>Pie de correo perzonalizado</li>
                         <li>Atencion 24/7</li>
                     </ul>
                 </PlanBody>

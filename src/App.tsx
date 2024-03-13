@@ -9,6 +9,7 @@ import Contact from "./pages/Contact/Contact"
 import Web from "./pages/Web/Web"
 import ErrorPage from "./pages/Error404/Error404"
 import SobreNosotros from "./pages/SobreNosotros/SobreNosotros"
+import Footer from "./components/Footer/footer"
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/web" element={ <Web/> } />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   )
