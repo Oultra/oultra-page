@@ -126,34 +126,28 @@ const Navbar = () => {
             open={open} 
             anchor="right" 
             onClose={ () => setOpen(false)}>
-            <NavHome to="/">
+            <NavHome to="/" onClick={ () => setOpen(false) }>
               oultra.dev
             </NavHome>
 
             <Divider />
 
-            <CustomLink to="/contacto">
+            <CustomLink to="/contacto" onClick={ () => setOpen(false) }>
               <ListItem >
                 <ListItemText primary="Contacto" />
               </ListItem>
             </CustomLink>
 
-            <CustomLink to="/servicios">
+            <CustomLink to="/servicios" onClick={ () => setOpen(false) }>
               <ListItem >
                 <ListItemText primary="Servicios" />
               </ListItem>
             </CustomLink>
-            <CustomLink to="/sobre-nosotros">
+            <CustomLink to="/sobre-nosotros" onClick={ () => setOpen(false) }>
               <ListItem >
                 <ListItemText primary="Sobre nosotros" />
               </ListItem>
             </CustomLink>
-
-            {/* <CustomLink to="/nosotros">
-              <ListItem >
-                <ListItemText primary="Nosotros" />
-              </ListItem>
-            </CustomLink> */}
 
             <CustomA href="https://www.instagram.com/oultradev/" target="blank_">
               <ListItem >
